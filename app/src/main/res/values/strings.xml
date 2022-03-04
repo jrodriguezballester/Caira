@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Caira15</string>
+    <string name="title_activity_instrucciones">Instrucciones</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">tab 3</string>
+    <string name="tab_text_4">tab 4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="estudiantes_fragment">Estudiantes</string>
+    <string name="universidades_fragment">universidades</string>
+
+
+</resources>
