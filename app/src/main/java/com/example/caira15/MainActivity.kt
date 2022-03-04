@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     fun sendMessage(view: MainActivity) {
      //   val editText = findViewById<EditText>(R.id.editTextTextPersonName)
      //   val message = editText.text.toString()
-        val intent = Intent(this, Instrucciones::class.java)
+        val intent = Intent(this, InstruccionesActivity::class.java)
         startActivity(intent)
     }
 }

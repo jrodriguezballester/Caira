@@ -7,8 +7,17 @@
     <string name="tab_text_4">tab 4</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="estudiantes_fragment">Estudiantes</string>
-    <string name="universidades_fragment">universidades</string>
+    <string name="estudiantes_fragment">ESTUDIANTES \n
+        Pruébate en nuestro laboratorio y conócete a ti mismo como nunca antes habías creído posible.\n
+        Utiliza Caira como una herramienta para conocer más personas con las mismas inquietudes que tú y alcanza tu mejor versión. Accede a formación exclusiva, aprende y conoce a tu mejor yo.</string>
+    <string name="universidades_fragment">UNIVERSIDADES\n
+        Diseña un perfil a medida y crea contenido de todo tipo que te permitirá que los estudiantes te conozcan, interactúen contigo y te escojan como la mejor opción.\n
+        Accede a nuestro dashboard y podrás tener un control absoluto de todo lo que ocurre en tu red. Proporcionamos información real proveniente de las métricas de tus usuarios para que puedas mejorar constantemente tu desempeño.</string>
+    <string name="tit_form_login">Sign In Or Join</string>
+    <string name="btn_sign_in">SIGN IN</string>
+    <string name="btn_join">JOIN</string>
+    <string name="email_addres">Email Addres</string>
+    <string name="password">Password</string>
 
 
 </resources>

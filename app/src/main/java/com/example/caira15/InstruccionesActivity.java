@@ -10,7 +10,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.caira15.databinding.ActivityInstruccionesBinding;
 import com.example.caira15.ui.main.SectionsPagerAdapter;
 
-public class Instrucciones extends AppCompatActivity {
+public class InstruccionesActivity extends AppCompatActivity {
 
     private ActivityInstruccionesBinding binding;
     ViewPager viewPager;
@@ -52,16 +52,14 @@ public class Instrucciones extends AppCompatActivity {
         puntosSlide = new TextView[2];// numero de fragments
         for (int i = 0; i < puntosSlide.length; i++) {
             puntosSlide[i] = new TextView(this);
-
-
             puntosSlide[i].setText("\u2022");
             puntosSlide[i].setTextSize(52);
             puntosSlide[i].setTextColor(getResources().getColor(R.color.BlancoTransparente, null));
             linearPuntos.addView(puntosSlide[i]);
         }
+        // Marca la vista
         if (puntosSlide.length > 0) {
             puntosSlide[pos].setTextColor(getResources().getColor(R.color.Blanco, null));
-
         }
 
     }

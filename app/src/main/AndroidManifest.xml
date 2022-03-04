@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Caira15">
         <activity
-            android:name=".Instrucciones"
+            android:name=".InstruccionesActivity"
             android:exported="false"
             android:label="@string/title_activity_instrucciones"
             android:theme="@style/Theme.Caira15.NoActionBar" />
