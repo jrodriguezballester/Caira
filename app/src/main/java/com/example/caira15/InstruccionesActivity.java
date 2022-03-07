@@ -16,6 +16,7 @@ public class InstruccionesActivity extends AppCompatActivity {
     ViewPager viewPager;
     private LinearLayout linearPuntos;
     private TextView[] puntosSlide;
+    private final Integer numFragments=3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,24 +33,13 @@ public class InstruccionesActivity extends AppCompatActivity {
         agregarIndicadorPuntos(0);
         viewPager.addOnPageChangeListener(viewListener);
 
-        //REFERENCIA A TABS Y BOTON FLOTANTE
-//        TabLayout tabs = binding.tabs;
-//        tabs.setupWithViewPager(viewPager);
-//        FloatingActionButton fab = binding.fab;
-//
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+
     }
 
     private void agregarIndicadorPuntos(int pos) {
         linearPuntos.removeAllViews();
         char uni = '\u0021';
-        puntosSlide = new TextView[2];// numero de fragments
+        puntosSlide = new TextView[numFragments];// numero de fragments
         for (int i = 0; i < puntosSlide.length; i++) {
             puntosSlide[i] = new TextView(this);
             puntosSlide[i].setText("\u2022");

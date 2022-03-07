@@ -1,23 +1,31 @@
 <resources>
     <string name="app_name">Caira15</string>
     <string name="title_activity_instrucciones">Instrucciones</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
-    <string name="tab_text_3">tab 3</string>
-    <string name="tab_text_4">tab 4</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="estudiantes_fragment">ESTUDIANTES \n
+
+    <string name="futuro_fragment">Caira conecta estudiantes con instituciones educativas. En un mundo en constante cambio, la educación debe prepararnos para adaptarnos y encontrar nuestro camino</string>
+    <string name="futuro_fragment_titulo">Hacemos realidad el futuro de la educación</string>
+
+    <string name="estudiantes_fragment">
         Pruébate en nuestro laboratorio y conócete a ti mismo como nunca antes habías creído posible.\n
         Utiliza Caira como una herramienta para conocer más personas con las mismas inquietudes que tú y alcanza tu mejor versión. Accede a formación exclusiva, aprende y conoce a tu mejor yo.</string>
-    <string name="universidades_fragment">UNIVERSIDADES\n
+    <string name="estudiantes_fragment_titulo">Conócete más se mejor. Conecta, aprende, crece</string>
+    <string name="estudiantes_fragment_subtitulo">ESTUDIANTES</string>
+
+
+    <string name="universidades_fragment">
         Diseña un perfil a medida y crea contenido de todo tipo que te permitirá que los estudiantes te conozcan, interactúen contigo y te escojan como la mejor opción.\n
         Accede a nuestro dashboard y podrás tener un control absoluto de todo lo que ocurre en tu red. Proporcionamos información real proveniente de las métricas de tus usuarios para que puedas mejorar constantemente tu desempeño.</string>
+
     <string name="tit_form_login">Sign In Or Join</string>
     <string name="btn_sign_in">SIGN IN</string>
     <string name="btn_join">JOIN</string>
     <string name="email_addres">Email Addres</string>
     <string name="password">Password</string>
+    <string name="universidades_fragment_titulo">Un mundo de oportunidades educativas</string>
+    <string name="universidades_fragment_subtitulo">UNIVERSIDADES</string>
 
 
 </resources>

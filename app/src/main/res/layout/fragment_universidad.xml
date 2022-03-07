@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".fragments.descripcion.UniversidadFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +18,20 @@
         android:src="@drawable/ic_universidades"
         android:layout_gravity="top"/>
 
-    <TextView
+        <TextView
+            style="@style/Theme.Caira15.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/universidades_fragment_titulo"
+            android:layout_gravity="bottom"/>
+        <TextView
+            style="@style/Theme.Caira15.SubTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/universidades_fragment_subtitulo"
+            android:layout_gravity="bottom"/>
+
+        <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"

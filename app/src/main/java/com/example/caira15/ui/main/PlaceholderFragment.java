@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.caira15.databinding.FragmentInstruccionesBinding;
 import com.example.caira15.fragments.descripcion.EstudiantesFragment;
+import com.example.caira15.fragments.descripcion.FuturoFragment;
 import com.example.caira15.fragments.descripcion.UniversidadFragment;
 
 /**
@@ -26,22 +27,17 @@ public class PlaceholderFragment extends Fragment {
     private PageViewModel pageViewModel;
     private FragmentInstruccionesBinding binding;
 
-    //MODIFICAMOS LA LLAMADA POR DEFECTO
-//    public static PlaceholderFragment newInstance(int index) {
-//        PlaceholderFragment fragment = new PlaceholderFragment();
-//        Bundle bundle = new Bundle();
-//        bundle.putInt(ARG_SECTION_NUMBER, index);
-//        fragment.setArguments(bundle);
-//        return fragment;
-//    }
-    // NUEVA LLAMADA
+
     public static Fragment newInstance(int index) {
         Fragment fragment = null;
         switch (index) {
             case 1:
-                fragment = new EstudiantesFragment();
+                fragment = new FuturoFragment();
                 break;
             case 2:
+                fragment = new EstudiantesFragment();
+                break;
+            case 3:
                 fragment = new UniversidadFragment();
                 break;
 

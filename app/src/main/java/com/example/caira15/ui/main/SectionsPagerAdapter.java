@@ -16,9 +16,10 @@ import com.example.caira15.R;
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-    @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2,R.string.tab_text_3,R.string.tab_text_4};
+//    @StringRes
+//    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2,R.string.tab_text_3,R.string.tab_text_4};
     private final Context mContext;
+    private final Integer numFragments=3;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
@@ -32,16 +33,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         return PlaceholderFragment.newInstance(position + 1);
     }
 
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return mContext.getResources().getString(TAB_TITLES[position]);
-    }
+//    @Nullable
+//    @Override
+//    public CharSequence getPageTitle(int position) {
+//        return mContext.getResources().getString(TAB_TITLES[position]);
+//    }
 
     // DEVOLVER EL NUMERO DE FRAGMENTS TOTALES
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 2;
+        return numFragments;
     }
 }

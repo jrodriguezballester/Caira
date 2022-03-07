@@ -7,6 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="Blanco">#F44336</color>
-    <color name="BlancoTransparente">#4CAF50</color>
+    <color name="Blanco">#FFFFFF</color>
+    <color name="BlancoTransparente">#cccccc</color>
+    <color name="background1">#EFF6FF</color>
+    <color name="grisTexto">#28384C</color>
+    <color name="moradoTexto">#786098</color>
+
 </resources>

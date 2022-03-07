@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.descripcion.EstudiantesFragment">
-
-
+    tools:context=".fragments.descripcion.FuturoFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,27 +15,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_estudiantes"
+            android:src="@drawable/ic_picscaira"
             android:layout_gravity="top"/>
+
         <TextView
             style="@style/Theme.Caira15.Titulo"
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
-            android:text="@string/estudiantes_fragment_titulo"
-            android:layout_gravity="bottom"/>
+            android:layout_gravity="bottom"
+            android:text="@string/futuro_fragment_titulo" />
+
         <TextView
-            style="@style/Theme.Caira15.SubTitulo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/estudiantes_fragment_subtitulo"
-            android:layout_gravity="bottom"/>
-        <TextView
-            style="@style/Theme.Caira15.Texto.Gris"
+            style="@style/Theme.Caira15.Texto.Morado"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:text="@string/estudiantes_fragment"
-            android:layout_gravity="bottom"/>
+            android:text="@string/futuro_fragment" />
     </LinearLayout>
+
 
 </FrameLayout>
