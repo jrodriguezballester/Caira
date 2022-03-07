@@ -17,7 +17,6 @@
         android:layout_weight="1"
         android:src="@drawable/ic_universidades"
         android:layout_gravity="top"/>
-
         <TextView
             style="@style/Theme.Caira15.Titulo"
             android:layout_width="match_parent"
@@ -30,12 +29,14 @@
             android:layout_height="wrap_content"
             android:text="@string/universidades_fragment_subtitulo"
             android:layout_gravity="bottom"/>
-
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:text="@string/universidades_fragment" />
+            style="@style/Theme.Caira15.Texto.Gris"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/universidades_fragment"
+            android:layout_gravity="bottom"/>
+
     </LinearLayout>
 
 </FrameLayout>

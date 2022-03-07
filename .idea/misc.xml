@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/boton_redondeado.xml" value="0.211" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/degradado.xml" value="0.116" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_instrucciones.xml" value="0.1" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_estudiantes.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_form_login.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_futuro.xml" value="0.242313705054716" />
