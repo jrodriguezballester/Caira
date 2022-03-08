@@ -43,7 +43,6 @@
 
     <style name="Theme.Caira15.Texto">
         <item name="android:textSize">15sp</item>
-
     </style>
 
     <style name="Theme.Caira15.Texto.Gris">
@@ -56,8 +55,10 @@
 
     <style name="Theme.Caira15.Boton">
         <item name="background">@drawable/degradado</item>
-
         <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Theme.Caira15.Fondo">
+        <item name="android:background">@color/white</item>
     </style>
 
 
