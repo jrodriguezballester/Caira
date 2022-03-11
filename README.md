@@ -9,3 +9,6 @@ Pantalla de inicio:
     Añadidos estilos de letras,botones
 Pendiente modificar posicion puntos marca pagina
     
+## Commit Login
+    Llamada a la API y recogida respuesta
+    TODO: Que hacer en cada respuesta

@@ -1,4 +1,4 @@
-package com.example.caira15;
+package com.example.caira15.ui.main;
 
 import android.os.Bundle;
 import android.widget.LinearLayout;
@@ -7,6 +7,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.caira15.R;
 import com.example.caira15.databinding.ActivityInstruccionesBinding;
 import com.example.caira15.ui.main.SectionsPagerAdapter;
 

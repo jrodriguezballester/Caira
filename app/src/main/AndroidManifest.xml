@@ -3,6 +3,7 @@
     package="com.example.caira15">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,12 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Caira15">
         <activity
-            android:name=".InstruccionesActivity"
+            android:name=".ui.main.InstruccionesActivity"
             android:exported="false"
             android:label="@string/title_activity_instrucciones"
             android:theme="@style/Theme.Caira15.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

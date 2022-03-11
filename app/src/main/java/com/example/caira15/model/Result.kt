@@ -1,3 +1,3 @@
 package com.example.caira15.model
 
-data class Result(val payload:Map<String,String>, val token:String)
+data class Result(val rol:Int,val userId:String, val token:String)
