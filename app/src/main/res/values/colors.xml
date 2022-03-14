@@ -12,5 +12,7 @@
     <color name="background1">#EFF6FF</color>
     <color name="grisTexto">#28384C</color>
     <color name="moradoTexto">#786098</color>
+    <color name="fondoInputs">#FAFAFA</color>
+
 
 </resources>

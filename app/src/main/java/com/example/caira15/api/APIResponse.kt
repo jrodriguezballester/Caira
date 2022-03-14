@@ -16,3 +16,8 @@ data class APIResponseLogin(
     @SerializedName("result") var result:Result,
 
     )
+data class APIResponseSingUpUser(
+    @SerializedName("status") var status: Int,
+    @SerializedName("msg") var msg: String,
+    @SerializedName("result") var result: Any,
+    )

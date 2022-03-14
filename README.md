@@ -2,13 +2,16 @@
 
 ## Commit pantalla de inicio
 
-Pantalla de inicio:
-    pagerview con dos frames
+    Pantalla de inicio:
+    pagerview con tres frames
     card formulario
 ## Commit "con styles"
     Añadidos estilos de letras,botones
-Pendiente modificar posicion puntos marca pagina
+    TODO: modificar posicion puntos marca pagina
     
 ## Commit Login
-    Llamada a la API y recogida respuesta
+    Llamada a la API para logearse y recogida respuesta
+    TODO: Que hacer en cada respuesta
+## Commit Registro1
+    Llamada a la API para Registrarse y recogida respuesta
     TODO: Que hacer en cada respuesta

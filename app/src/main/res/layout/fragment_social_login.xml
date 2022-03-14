@@ -24,7 +24,7 @@
 
                     <Button
                         android:background="@drawable/boton_redondeado"
-                        android:id="@+id/button"
+                        android:id="@+id/btnLogin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/facebook" />
@@ -38,9 +38,18 @@
                         android:id="@+id/button2"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_gravity="right"
+                        android:layout_gravity="end"
                         android:background="@drawable/boton_redondeado"
                         android:text="@string/google" />
+
+<!--                    <com.facebook.login.widget.LoginButton-->
+<!--                        android:id="@+id/connectWithFbButton"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:text="  connect_with_facebook" />-->
+<!--        -->
                 </LinearLayout>
 
 

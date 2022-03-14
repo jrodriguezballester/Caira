@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.InstruccionesActivity"
-    android:background="@color/background1">
+    android:background="@color/background1"
+    tools:context=".ui.main.InstruccionesActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,6 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
             <LinearLayout
                 android:id="@+id/idLinearPuntos"
                 android:layout_width="wrap_content"
@@ -31,49 +32,46 @@
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
                 android:orientation="horizontal"
-                android:padding="1dp"                >
-            </LinearLayout>
+                android:padding="1dp"></LinearLayout>
 
         </RelativeLayout>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-        <LinearLayout
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentContainerView"
-                android:name="com.example.caira15.fragments.login.FormLoginFragment"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                tools:layout="@layout/fragment_instrucciones" />
+                android:orientation="vertical">
 
-<!--        <RelativeLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-            <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentContainerView2"
-                android:name="com.example.caira15.fragments.login.ForgotFragment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                tools:layout="@layout/fragment_instrucciones" />
-<!--        </RelativeLayout>-->
-<!--        <RelativeLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-            <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentContainerView3"
-                android:name="com.example.caira15.fragments.login.SocialLoginFragment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                tools:layout="@layout/fragment_instrucciones" />
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/fragmentContainerView"
+                    android:name="com.example.caira15.fragments.login.FormLoginFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    tools:layout="@layout/fragment_instrucciones" />
 
-<!--        </RelativeLayout>-->
-        </LinearLayout>
-</ScrollView>
+
+                <!--            <androidx.fragment.app.FragmentContainerView-->
+                <!--                android:id="@+id/fragmentContainerView2"-->
+                <!--                android:name="com.example.caira15.fragments.login.ForgotFragment"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_centerHorizontal="true"-->
+                <!--                tools:layout="@layout/fragment_instrucciones" />-->
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/fragmentContainerView3"
+                    android:name="com.example.caira15.fragments.login.SocialLoginFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    tools:layout="@layout/fragment_instrucciones" />
+
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
