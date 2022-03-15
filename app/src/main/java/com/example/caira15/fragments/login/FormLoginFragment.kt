@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.caira15.CairaAplication.Companion.prefs
 import com.example.caira15.R
 import com.example.caira15.api.APIResponseLogin
 import com.example.caira15.api.APIService
@@ -41,19 +42,20 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentFormLoginBinding.bind(view)
-        var email = binding.editTextTextEmailAddress.text.toString()
-        var password = binding.editTextTextPassword.text.toString()
 
         binding.btnLogin.setOnClickListener {
-            //TODO DESCOMENTAR EN PRODUCCION
-            //////TEST//////
+            var email = binding.editTextTextEmailAddress.text.toString()
+            var password = binding.editTextTextPassword.text.toString()
 
-            //TODO COMPROBAR NULOS Y FORMATOS EMAIL-PASSWORD//
-            ////   var dataLogin=DataLogin(email,password)
-            var dataLogin = DataLogin("jrodriguezballester@gmail.com", "caira")
-            //caira==  $2a$10$qh0eG4WwVD5eftGL38dP.e1wlAqiItN6T5HPfBTer5tDt70p98DTi
-            getLogin(dataLogin)
+            //TODO FORMATOS EMAIL-PASSWORD//
+            if (email.isNotEmpty() and password.isNotEmpty()) {
+                var dataLogin = DataLogin(email, password)
+                getLogin(dataLogin)
+            } else {
+                Toast.makeText(context, "Rellena los campos", Toast.LENGTH_LONG).show()
+            }
         }
+
         binding.btnRegister.setOnClickListener {
             val intent = Intent(activity, RegisterActivity::class.java)
             activity?.startActivity(intent)
@@ -88,33 +90,77 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
                 if (call.isSuccessful) {
                     Log.i(TAG_LOGS, call.toString())
                     Log.i(TAG_LOGS, respons.toString())
-                    if(respons!!.status ==200){
-                        //TODO GUARDAR TOKEN Y DATOS PASAR A DASHBOARD
-                        Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
-                        val intent = Intent(activity, DashboardActivity::class.java)
-                        activity?.startActivity(intent)
-                    }else{
-                        //TODO CONTROLAR TODOS MENSAJES DE ERROR
-                        Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
-                    }
-                } else {
-                    //
-                    Toast.makeText(context, "Problemas con el servidor o internet", Toast.LENGTH_LONG).show()
+                    when (respons!!.status) {
+                        200 -> {
+                            //Login exitoso
+                            Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
+                            Log.i(TAG_LOGS, "result-----------:" + respons.result)
+                            // guardar en SharePreferents
+                            prefs.saveResult(respons.result.rol,respons.result.userId,respons.result.token)
+                            goToDasboard()
 
-                    Log.i(TAG_LOGS, "no ------- llego aqui------------")
+                        }
+                        400 -> {
+                            //Mising Data
+                            Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
+                        }
+                        404 -> {
+                            //'Email or password is wrong.'
+                            Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
+                        }
+                        422 -> {
+                            //Wrong name
+                            Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
+
+                        }
+                        502 -> {
+                            //'Wrong email.
+                            Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
+
+                        }
+                        else -> {
+                            Toast.makeText(
+                                context,
+                                "Problemas con el servidor o internet",
+                                Toast.LENGTH_LONG
+                            ).show()
+
+                            Log.i(TAG_LOGS, "no ------- llego aqui------------")
+                        }
+                    }
+//                    if(respons!!.status ==200){
+//                        //TODO GUARDAR TOKEN Y DATOS PASAR A DASHBOARD
+//                        Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
+//                        val intent = Intent(activity, DashboardActivity::class.java)
+//                        activity?.startActivity(intent)
+//                    }else{
+//                        //TODO CONTROLAR TODOS MENSAJES DE ERROR
+//                        Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
+//                    }
+//                } else {
+//                    //
+//                    Toast.makeText(context, "Problemas con el servidor o internet", Toast.LENGTH_LONG).show()
+//
+//                    Log.i(TAG_LOGS, "no ------- llego aqui------------")
+//                }
                 }
             }
         }
+
+
+        fun composeEmail(address: String) {
+            val subject = "Caira"
+            val intent = Intent(Intent.ACTION_SENDTO).apply {
+                data = Uri.parse("mailto:") // only email apps should handle this
+                putExtra(Intent.EXTRA_EMAIL, address)
+                putExtra(Intent.EXTRA_SUBJECT, subject)
+            }
+            startActivity(intent)
+        }
     }
 
-
-    fun composeEmail(address: String) {
-        val subject="Caira"
-        val intent = Intent(Intent.ACTION_SENDTO).apply {
-            data = Uri.parse("mailto:") // only email apps should handle this
-            putExtra(Intent.EXTRA_EMAIL, address)
-            putExtra(Intent.EXTRA_SUBJECT, subject)
-        }
-            startActivity(intent)
+    private fun goToDasboard() {
+        val intent = Intent(activity, DashboardActivity::class.java)
+        activity?.startActivity(intent)
     }
 }

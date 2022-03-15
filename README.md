@@ -12,6 +12,11 @@
 ## Commit Login
     Llamada a la API para logearse y recogida respuesta
     TODO: Que hacer en cada respuesta
+
 ## Commit Registro1
     Llamada a la API para Registrarse y recogida respuesta
     TODO: Que hacer en cada respuesta
+
+## Commit SaveSesion
+    Guarda en sharepreferents
+    TODO: Hacer un cierre de sesion
