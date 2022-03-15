@@ -44,9 +44,18 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
         _binding = FragmentFormLoginBinding.bind(view)
 
         binding.btnLogin.setOnClickListener {
-            var email = binding.editTextTextEmailAddress.text.toString()
-            var password = binding.editTextTextPassword.text.toString()
-
+            var email = binding.editTextEmail.text.toString()
+            var password = binding.editTextPassword.text.toString()
+            var emailError:String?=null
+            var passwordError:String?=null
+            if (email.isEmpty()){
+                emailError= getText(R.string.emailError).toString()
+                binding.editTextEmail.error = emailError
+            }
+            if (password.isEmpty()){
+                passwordError= getText(R.string.passwordError).toString()
+                binding.editTextPassword.error = passwordError
+            }
             //TODO FORMATOS EMAIL-PASSWORD//
             if (email.isNotEmpty() and password.isNotEmpty()) {
                 var dataLogin = DataLogin(email, password)
@@ -71,6 +80,12 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
 //                composeEmail(email)
 //            }
         }
+
+    }
+
+    private fun toogleTextErrorEmail(emailError: String) {
+        binding.editTextEmail.error = emailError
+       // binding.editTextEmail.setErrorEnabled(emailError)
 
     }
 
@@ -106,7 +121,9 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
                         }
                         404 -> {
                             //'Email or password is wrong.'
-                            Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
+                            binding.editTextEmail.error = respons.msg
+                            binding.editTextPassword.error=respons.msg
+                     //       Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
                         }
                         422 -> {
                             //Wrong name
@@ -115,7 +132,8 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
                         }
                         502 -> {
                             //'Wrong email.
-                            Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
+                            binding.editTextEmail.error = respons.msg
+                          //  Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
 
                         }
                         else -> {
@@ -124,25 +142,10 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
                                 "Problemas con el servidor o internet",
                                 Toast.LENGTH_LONG
                             ).show()
-
                             Log.i(TAG_LOGS, "no ------- llego aqui------------")
                         }
                     }
-//                    if(respons!!.status ==200){
-//                        //TODO GUARDAR TOKEN Y DATOS PASAR A DASHBOARD
-//                        Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
-//                        val intent = Intent(activity, DashboardActivity::class.java)
-//                        activity?.startActivity(intent)
-//                    }else{
-//                        //TODO CONTROLAR TODOS MENSAJES DE ERROR
-//                        Toast.makeText(context, respons.msg, Toast.LENGTH_LONG).show()
-//                    }
-//                } else {
-//                    //
-//                    Toast.makeText(context, "Problemas con el servidor o internet", Toast.LENGTH_LONG).show()
-//
-//                    Log.i(TAG_LOGS, "no ------- llego aqui------------")
-//                }
+
                 }
             }
         }

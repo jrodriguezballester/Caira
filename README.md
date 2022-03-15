@@ -20,3 +20,6 @@
 ## Commit SaveSesion
     Guarda en sharepreferents
     TODO: Hacer un cierre de sesion
+
+## Commit Mejora editText
+    Solo en login

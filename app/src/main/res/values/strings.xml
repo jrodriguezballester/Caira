@@ -34,6 +34,8 @@
     <string name="repeatpassword">Repeat password</string>
     <string name="btnRegister">Register</string>
     <string name="btn_login">Login</string>
+    <string name="emailError">email requerido</string>
+    <string name="passwordError">password requerido</string>
 
 
 </resources>

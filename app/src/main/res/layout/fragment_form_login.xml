@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             app:cardCornerRadius="10dp"
-            style="@style/Theme.Caira15.Fondo">
+           >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -23,73 +23,107 @@
                 android:orientation="vertical"
                 android:padding="20dp">
 
-                <TextView
-                    style="@style/Theme.Caira15.Titulo.Blanco"
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
+<!--                <TextView-->
+<!--                   -->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/tit_form_login" />-->
+
+<!--                <Space-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:labelFor="@+id/editTextTextEmailAddress"-->
+<!--                    android:text="@string/email_addres" />-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_layout_email"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tit_form_login" />
+                    android:layout_marginTop="@dimen/form_margin_top"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/email_addres"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+<!--                    app:layout_constraintTop_toBottomOf="@+id/toolbar"-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+<!--                <EditText-->
+<!--                    android:id="@+id/editTextTextEmailAddress"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="@string/email_addres"-->
+<!--                    android:inputType="textEmailAddress"-->
+<!--                    android:minHeight="48dp" />-->
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+<!--                <TextView-->
+<!--                    android:id="@+id/textView3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:labelFor="@+id/editTextTextPassword"-->
+<!--                    android:text="@string/password" />-->
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
+<!--                <EditText-->
+<!--                    style="@style/Widget.AppCompat.AutoCompleteTextView"-->
+<!--                    android:id="@+id/editTextTextPassword"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="@string/password"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:minHeight="48dp" />-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_layout_password"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:labelFor="@+id/editTextTextEmailAddress"
-                    android:text="@string/email_addres" />
+                    android:layout_marginTop="@dimen/form_margin_top"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:hint="@string/password"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-                <EditText
-                    android:id="@+id/editTextTextEmailAddress"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
-                    android:minHeight="48dp" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:labelFor="@+id/editTextTextPassword"
-                    android:text="@string/password" />
-
-                <EditText
-                    style="@style/Widget.AppCompat.AutoCompleteTextView"
-                    android:id="@+id/editTextTextPassword"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPassword"
-                    android:minHeight="48dp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal">-->
 
                     <Button
                         android:background="@drawable/boton_redondeado"
                         android:id="@+id/btnLogin"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/btn_sign_in" />
 
                     <Space
                         android:layout_width="35dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_height="10dp"
+                        />
 
                     <Button
                         android:id="@+id/btnRegister"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="end"
+
                         android:background="@drawable/boton_redondeado"
                         android:text="@string/btn_join" />
-                </LinearLayout>
+<!--                </LinearLayout>-->
                 <TextView
                     android:id="@+id/tvForgot"
                     android:layout_width="wrap_content"
