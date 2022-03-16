@@ -23,3 +23,6 @@
 
 ## Commit Mejora editText
     Solo en login
+## Commit desaprobechado
+    Eliminar activity dashboard; salen errores
+
