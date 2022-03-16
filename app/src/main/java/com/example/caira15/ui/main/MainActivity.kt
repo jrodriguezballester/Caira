@@ -6,14 +6,15 @@ import android.os.Bundle
 import android.util.Log
 import com.example.caira15.CairaAplication.Companion.prefs
 import com.example.caira15.R
-import com.example.caira15.ui.dashboard.DashboardActivity
+import com.example.caira15.ui.login.InstruccionesActivity
+import com.example.caira15.ui.principal.BodyappActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-     //   prefs.closeSesion()
-     //   Log.i("prefs(clear):", prefs.getResult().toString())
+       prefs.closeSesion()
+      Log.i("prefs(clear):", prefs.getResult().toString())
         isLogin()
 
     }
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun goToDasboard(mainActivity: MainActivity) {
-        val intent = Intent(this, DashboardActivity::class.java)
+        val intent = Intent(this, BodyappActivity::class.java)
         startActivity(intent)
     }
 

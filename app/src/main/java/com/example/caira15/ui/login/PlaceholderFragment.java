@@ -1,4 +1,4 @@
-package com.example.caira15.ui.main;
+package com.example.caira15.ui.login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

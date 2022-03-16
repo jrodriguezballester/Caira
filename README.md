@@ -26,3 +26,5 @@
 ## Commit desaprobechado
     Eliminar activity dashboard; salen errores
 
+## Commit inicio navigation drawer
+    Añadido menu lateral y arreglado errores del anterior commit

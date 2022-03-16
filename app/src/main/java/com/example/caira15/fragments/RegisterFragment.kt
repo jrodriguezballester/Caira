@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import com.example.caira15.R
-import com.example.caira15.api.APIResponse
 import com.example.caira15.api.APIResponseSingUpUser
 import com.example.caira15.api.APIService
 import com.example.caira15.api.RetrofitHelper
 import com.example.caira15.databinding.FragmentRegisterBinding
 import com.example.caira15.model.DataRegister
-import com.example.caira15.ui.main.InstruccionesActivity
+import com.example.caira15.ui.login.InstruccionesActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

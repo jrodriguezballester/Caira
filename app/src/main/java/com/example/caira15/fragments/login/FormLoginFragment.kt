@@ -17,7 +17,8 @@ import com.example.caira15.fragments.BaseFragment
 
 import com.example.caira15.model.DataLogin
 import com.example.caira15.ui.Register.RegisterActivity
-import com.example.caira15.ui.dashboard.DashboardActivity
+import com.example.caira15.ui.principal.BodyappActivity
+//import com.example.caira15.ui.dashboard.DashboardActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -163,7 +164,7 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
     }
 
     private fun goToDasboard() {
-        val intent = Intent(activity, DashboardActivity::class.java)
+       val intent = Intent(activity, BodyappActivity::class.java)
         activity?.startActivity(intent)
     }
 }
