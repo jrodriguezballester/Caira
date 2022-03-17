@@ -28,3 +28,5 @@
 
 ## Commit inicio navigation drawer
     Añadido menu lateral y arreglado errores del anterior commit
+## Commit endNavDrawer
+    punto de inicio del dashboard

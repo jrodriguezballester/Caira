@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/baseline_travel_explore_20.xml" value="0.1115" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/boton_redondeado.xml" value="0.211" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/degradado.xml" value="0.116" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.1" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/ic_baseline_travel_explore_20.xml" value="0.1115" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/ic_google2_background.xml" value="0.19" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_dashboard.xml" value="0.1935185185185185" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_instrucciones.xml" value="0.1" />
@@ -19,6 +22,8 @@
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_register.xml" value="0.1935185185185185" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_social_login.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_universidad.xml" value="0.1" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/menu/bodyapp.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19" />
       </map>
     </option>

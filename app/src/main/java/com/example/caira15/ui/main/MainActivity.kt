@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-       prefs.closeSesion()
-      Log.i("prefs(clear):", prefs.getResult().toString())
+      // prefs.closeSesion()
+   //   Log.i("prefs(clear):", prefs.getResult().toString())
         isLogin()
 
     }

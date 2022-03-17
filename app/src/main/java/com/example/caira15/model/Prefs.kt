@@ -1,6 +1,7 @@
 package com.example.caira15.model
 
 import android.content.Context
+import android.util.Log
 
 class Prefs(val context:Context) {
 
@@ -22,5 +23,6 @@ class Prefs(val context:Context) {
     }
     fun closeSesion(){
         storage.edit().clear().apply()
+        Log.i("prefs(clear):", storage.toString())
     }
 }
