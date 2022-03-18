@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import com.example.caira15.CairaAplication.Companion.prefs
 import com.example.caira15.R
+import com.example.caira15.fragments.ListProgramFragment
 import com.example.caira15.ui.login.InstruccionesActivity
 import com.example.caira15.ui.principal.BodyappActivity
 
@@ -13,10 +14,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-      // prefs.closeSesion()
+    //  prefs.closeSesion()
    //   Log.i("prefs(clear):", prefs.getResult().toString())
         isLogin()
-
+//supportFragmentManager.beginTransaction().replace(R.id.contenedorFragment,ListProgramFragment.newInstance()).commit()
     }
 
     private fun isLogin() {

@@ -13,11 +13,13 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.caira15.R
 import com.example.caira15.databinding.ActivityBodyappBinding
+import com.example.caira15.fragments.ListProgramFragment
 
 class BodyappActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityBodyappBinding
+  //  var listaActiveProgram= ListProgramFragment.newInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,10 +29,10 @@ class BodyappActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarBodyapp.toolbar)
 
-        binding.appBarBodyapp.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+//        binding.appBarBodyapp.fab.setOnClickListener { view ->
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+//        }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_bodyapp)
@@ -46,6 +48,8 @@ class BodyappActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+      //  supportFragmentManager.beginTransaction().replace(R.id.nav_host_fragment_content_bodyapp,listaActiveProgram)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
