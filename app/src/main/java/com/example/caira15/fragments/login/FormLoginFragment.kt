@@ -16,8 +16,8 @@ import com.example.caira15.databinding.FragmentFormLoginBinding
 import com.example.caira15.fragments.BaseFragment
 
 import com.example.caira15.model.DataLogin
-import com.example.caira15.ui.Register.RegisterActivity
-import com.example.caira15.ui.principal.BodyappActivity
+import com.example.caira15.activities.Register.RegisterActivity
+import com.example.caira15.activities.principal.BodyappActivity
 //import com.example.caira15.ui.dashboard.DashboardActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

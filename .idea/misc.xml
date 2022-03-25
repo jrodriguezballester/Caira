@@ -9,17 +9,21 @@
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/ic_baseline_travel_explore_20.xml" value="0.1115" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/ic_google2_background.xml" value="0.19" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/drawable/side_nav_bar.xml" value="0.248" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout-land/activity_welcome.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_bodyapp.xml" value="0.2421875" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_dashboard.xml" value="0.1935185185185185" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_instrucciones.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_register.xml" value="0.15677083333333333" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/activity_welcome.xml" value="0.11302083333333333" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/app_bar_bodyapp.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/content_bodyapp.xml" value="0.18229166666666666" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_estudiantes.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_forgot.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_form_login.xml" value="0.1" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_futuro.xml" value="0.242313705054716" />
+        <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_gallery.xml" value="0.22871376811594202" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_home.xml" value="0.115625" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_instrucciones.xml" value="0.19655797101449277" />
         <entry key="..\:/proyectosAndroid/Caira15/app/src/main/res/layout/fragment_list_program.xml" value="0.1" />

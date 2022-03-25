@@ -10,7 +10,7 @@ import com.example.caira15.api.APIService
 import com.example.caira15.api.RetrofitHelper
 import com.example.caira15.databinding.FragmentRegisterBinding
 import com.example.caira15.model.DataRegister
-import com.example.caira15.ui.login.InstruccionesActivity
+import com.example.caira15.activities.welcome.WelcomeActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -33,7 +33,7 @@ class RegisterFragment : BaseFragment<FragmentRegisterBinding>(R.layout.fragment
         _binding = FragmentRegisterBinding.bind(view)
 
         binding.buttonLoginInRegister.setOnClickListener {
-            val intent = Intent(activity, InstruccionesActivity::class.java)
+            val intent = Intent(activity, WelcomeActivity::class.java)
             activity?.startActivity(intent)
         }
         binding.buttonRegister.setOnClickListener {

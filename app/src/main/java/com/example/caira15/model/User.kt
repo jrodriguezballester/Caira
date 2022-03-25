@@ -14,5 +14,4 @@ data class User(
     var rol:Int,
     var created_at:Long
 
-
 )

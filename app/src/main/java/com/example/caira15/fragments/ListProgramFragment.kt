@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.caira15.AdapterActiveProgram
+import com.example.caira15.adapters.AdapterActiveProgram
 import com.example.caira15.R
 import com.example.caira15.model.ActiveProgram
 
@@ -28,7 +28,7 @@ class ListProgramFragment : Fragment() {
 
     lateinit var recylerActivePrograms:RecyclerView
     var activeProgramsList= mutableListOf<ActiveProgram>()
-    private val adaptador=AdapterActiveProgram()
+    private val adaptador= AdapterActiveProgram()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

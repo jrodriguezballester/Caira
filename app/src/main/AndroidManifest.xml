@@ -14,23 +14,23 @@
         android:theme="@style/Theme.Caira15"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ui.principal.BodyappActivity"
+            android:name=".activities.principal.BodyappActivity"
             android:exported="false"
             android:label="@string/title_activity_bodyapp"
             android:theme="@style/Theme.Caira15.NoActionBar" />
         <activity
-            android:name=".ui.Register.RegisterActivity"
+            android:name=".activities.Register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.dashboard.DashboardActivity"
+            android:name=".activities.dashboard.DashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.login.InstruccionesActivity"
+            android:name=".activities.welcome.WelcomeActivity"
             android:exported="false"
             android:label="@string/title_activity_instrucciones"
             android:theme="@style/Theme.Caira15.NoActionBar" />
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".activities.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
