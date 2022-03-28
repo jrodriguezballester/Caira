@@ -74,12 +74,6 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
             //TODO MANDAR EMAIL
             Toast.makeText(context, "HAS OLVIDADO LA CONTRASEÑA", Toast.LENGTH_LONG).show()
 
-//           email = binding.editTextTextEmailAddress.text.toString()
-//            if (email!=null){
-//                //Mandar Correo
-//                Toast.makeText(context, "mandando correo", Toast.LENGTH_LONG).show()
-//                composeEmail(email)
-//            }
         }
 
     }
@@ -149,17 +143,6 @@ class FormLoginFragment : BaseFragment<FragmentFormLoginBinding>(R.layout.fragme
 
                 }
             }
-        }
-
-
-        fun composeEmail(address: String) {
-            val subject = "Caira"
-            val intent = Intent(Intent.ACTION_SENDTO).apply {
-                data = Uri.parse("mailto:") // only email apps should handle this
-                putExtra(Intent.EXTRA_EMAIL, address)
-                putExtra(Intent.EXTRA_SUBJECT, subject)
-            }
-            startActivity(intent)
         }
     }
 

@@ -55,6 +55,13 @@
     <string name="social_profile">Social Profile</string>
     <string name="logout">Logout</string>
     <string name="notifications">Notifications</string>
+    <string name="center">center</string>
+    <string name="studies">Studies</string>
+    <string name="location">Location</string>
+    <string name="degree">Degree</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_search_course">Search course by ...</string>
+    <string name="btn_close">Cancel</string>
 
 
 </resources>

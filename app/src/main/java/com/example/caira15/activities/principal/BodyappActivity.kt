@@ -21,7 +21,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.caira15.R
 import com.example.caira15.activities.main.MainActivity
 import com.example.caira15.databinding.ActivityBodyappBinding
-import com.example.caira15.viewmodels.ViewModelBody
+import com.example.caira15.viewmodels.BodyViewModel
 import com.google.android.material.navigation.NavigationView
 
 
@@ -29,7 +29,7 @@ class BodyappActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityBodyappBinding
-    private lateinit var viewModel : ViewModelBody
+    private lateinit var viewModel : BodyViewModel
     //  var listaActiveProgram= ListProgramFragment.newInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +40,7 @@ class BodyappActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarBodyapp.toolbar)
         // viewModel
-        viewModel = ViewModelProvider(this).get(ViewModelBody::class.java)
+        viewModel = ViewModelProvider(this).get(BodyViewModel::class.java)
         viewModel.status.observe(this, Observer { status -> status?.let {
             viewModel.status.value=null
             Toast.makeText(this, "session close", Toast.LENGTH_SHORT).show()

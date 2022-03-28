@@ -1,4 +1,4 @@
-package com.example.caira15.activities.principal.ui.home
+package com.example.caira15.activities.principal.ui.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import com.example.caira15.databinding.FragmentHomeBinding
 
 //import com.example.caira15.ui.principal.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+class DashboardFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
 
@@ -24,7 +24,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(DashboardViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
