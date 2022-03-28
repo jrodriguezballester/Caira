@@ -1,5 +1,5 @@
 # Caira
-
+    (Ejecutar tambien node index Caira Back)
 ## Commit pantalla de inicio
 
     Pantalla de inicio:
@@ -33,4 +33,4 @@
 ## Commit dashboard1
     Creada la lista de active Programs
 ## Commit menuderecho
-    Creado el menu overflow, falta darles accion 
+    Creado el menu overflow, falta dar les accion 

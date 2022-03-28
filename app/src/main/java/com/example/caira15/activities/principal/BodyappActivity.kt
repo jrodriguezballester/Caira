@@ -1,5 +1,6 @@
 package com.example.caira15.activities.principal
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.text.Spannable
@@ -10,13 +11,17 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.caira15.R
+import com.example.caira15.activities.main.MainActivity
 import com.example.caira15.databinding.ActivityBodyappBinding
+import com.example.caira15.viewmodels.ViewModelBody
 import com.google.android.material.navigation.NavigationView
 
 
@@ -24,6 +29,7 @@ class BodyappActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityBodyappBinding
+    private lateinit var viewModel : ViewModelBody
     //  var listaActiveProgram= ListProgramFragment.newInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,11 +39,16 @@ class BodyappActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarBodyapp.toolbar)
+        // viewModel
+        viewModel = ViewModelProvider(this).get(ViewModelBody::class.java)
+        viewModel.status.observe(this, Observer { status -> status?.let {
+            viewModel.status.value=null
+            Toast.makeText(this, "session close", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
-//        binding.appBarBodyapp.fab.setOnClickListener { view ->
-//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                .setAction("Action", null).show()
-//        }
+        } })
+
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_bodyapp)
@@ -102,11 +113,12 @@ class BodyappActivity : AppCompatActivity() {
                 true
             }
             2 -> {
-                action(2)
+              // viewModel.logout()
+
                 true
             }
             3 -> {
-                action(3)
+                viewModel.logout()
                 true
             }
             4 -> {
